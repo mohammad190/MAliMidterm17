@@ -1,0 +1,197 @@
+Please answer the below core-java Questions:
+
+
+What jdk contains or composed of and define each components?
+Ans:: Java Development kit. Composed of JRE, Complier, and Debugger.
+                            JRE: Java Runtime Environment.
+                            Complier: Translate source code into byte code.
+    		                Debugger: Provide inspection and debugging.
+
+What is IDE?
+Ans:Integrated Development Environment.
+
+What are the IDEs available in the market to support java?
+Ans: Eclipse, Intellij, Net beans.
+
+Explain the entire java life cycle.
+Ans:A java program will be written and complied by a java complier.
+From there it will turn into .class, which than goes through the interpreter.
+The translate the java code into binary machine code. This is then outputted to computer.
+
+what is class?
+Ans:A blueprint for creating objects.
+
+What is object?
+Ans:An entity that has state and behavior?
+
+What is the entry point of an application?
+Ans: The main method.
+
+Why main is static?
+Ans: When a java program execute, it looks like as public static void main method.
+The reason main method is static ,
+so that it could be called by JVM without creating an instance of the class.
+
+What is the difference between an Interface and Abstract class?
+Ans:Interface: 1.Interface can have only abstract methods
+               2.A class can implement any number of interface.
+               3.Interface class ca n have only public abstract method. i.e. by default
+               4.Interface can extends any of interfaces at  time.
+               5.Interface has a only static and final variable
+
+   Abstract :  1.Abstract class has abstract and non-abstract methods.
+               2.A class can extend only one abstract class.
+               3.Abstract class can have protected , public, and public abstract methods
+               4.Abstract class can extend only one class or one abstract class at a time.
+               5.Abstract class can have final, non final, static and non static methods.
+
+Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+Ans:: No, A java abstract class also cannot be instantiated, but can be invoked.
+Any variable declare in the interface are final or constant.
+One can create an instance of an anonymous subclass of your abstract class.
+And then it could be invoked the method from  abstract class reference pointing to subclass object.
+
+what is Access Specifier?
+Ans:1.	Public: Easily access
+    2.	Private: Members can only access
+    3.	Protected: Can be access from same package and subclass existing in any package can access.
+    4.	Default(No Specifier)
+
+
+What is OOP ? Define each feature of java OOP.
+Ans:OOP- Object Oriented Program.
+    1.	Inheritance: Is a mechanism in which one object acquires all the properties and behaviors of parent class.
+    2.	Abstraction: Implementation hiding
+    3.	Polymorphism: It is an ability of an object to make on many form.
+    Two types of polymorphism:
+    1-	Method Overloading ? Happens on Compile time
+    2-	Method Overriding?  Happens on Run time
+    4.	Encapsulation: Data hiding
+
+
+What is API? Name list of API that you have used so far.
+Ans: API- Application programming interface.
+          List of API:- Core java API, OSGI, JMF, Google, Android, SE, ME, JSP
+
+Does java support multiple inheritance?
+Ans: No. To reduce the complexity and simplify the language.
+
+What is method overloading and when it happens?
+Ans: : If a class have a multiple methods by same name but different parameters,
+it is known as method Overloading. Happen on compile time.
+
+Explain exceptions in java and how to handle it.
+Ans: In java exception are object. During the program compilation the execution of the program behaves unexpectedly,
+exception occurred. Try-catch and throw exception two most popular way to handle exception.
+
+What is static keyword in java? How it has been used in variables and methods ?
+Ans:The static keyword used for memory management mainly.
+    Static variables: Static variable is used to refer the common property of all objects.
+    		          Static variable gets memory only once in class area at the time of class loading.
+    Static method:    A static method belongs to the class rater than object of a class.
+                      A static method can be invoked without the need for creating as instance of class.
+
+
+
+What is final and how it has been used variables and methods?
+Ans:The final keyword in java is used to restrict the users.
+    The java final keyword can be used in many contexts.
+    Variable: If you make any final variable as final,
+    you cannot change the value of final variable (It will be constant).
+    Method: If you make any final method, you can override it.
+
+What is final, finally and finalize?
+Ans: Final: Final is used to apply restrictions on class, method and variables.
+            Final class cannot be inherited,
+            final method cannot be overridden, and final variable cannot be changed. And final is ?Keyword?.
+    Finally:Finally is used to place important code,
+            it will be executed whether exception is handled or not. And finally is ?Block?.
+    Finalize:Finalize is used to perform clean up processing just before object is grabbed collected.
+             And Finalize is a ?Method?.
+What is a constructor ?
+Ans:Constructor is just like a method that is used to initialize the state of and object.
+    It is invoked at the name of the object creation.
+
+What is "this" keyword in java ?
+Ans: There can be a lot of usage of java keyword.
+     In java this is a reference variable that refers to the current object,
+     and instance variable.
+
+What is "super" keyword in java?
+Ans:It is keyword that refers to the immediate parent class object.
+
+What is JVM stand for ?
+Ans: JVM: Java virtual machine.
+
+What version of java are you using?
+Ans: Java aversion ?1.8.0_131?
+
+What is JAR stand for ?
+Ans: Java Archive.
+
+What is compile time and run time?
+Ans: Compile time: A compile time error is a problem such as syntax error (example; }  )
+                   or spelling mistake example (string), instead of String.
+     Runtime:      A runtime error occurs while your program is running.
+                   Sometimes this error can be tough to track down.
+
+What is heap?
+Ans:The heap section contains Object (May also contain reference variable)
+
+How java manage it's memory?
+Ans: Memory management is the process of allocating new
+     objects and removing unused objects to make space for those new object allocations.
+     This section presents some basic memory management concepts
+     and explains the basics about object allocation and garbage collection.
+
+What is the difference between String, StringBuffer and StringBuilder?
+Ans: String: String is an immutable class, it cannot be changed.
+     StringBuffer: Is the original synchronized version of string Builder
+     StringBuilder: String buffer is mutable class that can be appended to,
+                    characters replaced or removed and ultimately converted.
+
+What is Singleton class?
+Ans: Singleton class:We can make constructor as private.
+     So that We can not create an object outside of the class. T
+     his property is useful to create singleton class in java.
+     Singleton pattern helps us to keep only one instance of a class at any time.
+     The purpose of singleton is to control object creation by keeping private constructor.
+
+What is Serialization and Deserialization?
+Ans:
+
+Which one will take more memory, an int or Integer?
+Ans:   Serialization is a mechanism of converting the state of an object into a byte stream.
+       Deserialization is the reverse process where the byte stream is used to
+       recreate the actual Java object in memory. This mechanism is used to persist the object.
+
+Why is String Immutable in Java?
+Ans: In java, string objects are immutable. Immutable simply means unmodifiable or unchangeable.
+     Once string object is created its data or state can't be changed but a new string object is created.
+
+What is constructor chaining in Java?
+Ans:Calling a constructor from the another constructor of same class is known as Constructor chaining.
+
+The difference between Serial and Parallel Garbage Collector?
+Ans:both the serial and parallel collectors cause a stop-the-world during the GC.
+    a serial collector is a default copying collector which uses only one GC thread for the GC operation,
+    while a parallel collector uses multiple GC threads for the GC operation.
+    the parallel uses multiple GC threads, while the CMS uses only one.
+    the parallel is a 'stop-the-world' collector, while the CMS stops the world only during the initial mark and remark phases.
+
+
+What is JIT stands for?
+Ans:JIT stands for Just In time compilation and JVM stands for Java Virtual Machine.
+    JVM is a virtual machine used in Java programming platform to execute or run Java programs.
+
+Explain Java Heap space and Garbage collection?
+Ans:whenever we create an object using new operator or by any another means the
+    object is allocated memory from Heap and When object dies or garbage collected, memory goes back to Heap space in Java,
+    to learn more about garbage collection see how garbage collection works in Java.
+
+Can you guarantee the garbage collection process?
+Ans:
+What is the difference between stack and heap in Java?
+
+
+
